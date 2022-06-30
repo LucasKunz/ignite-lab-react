@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        blur: 'url(/src/assets/blur-background.png)'
+        blur: 'url(/src/assets/blur-background.png)',
+        logoReact: 'url(/src/assets/logo-react.svg)'
       },
       
       fontFamily: {
@@ -38,6 +39,10 @@ module.exports = {
           900: '#09090A'
         }
       },
+
+      screens: {
+        'lg': {'max': '1023px'},
+      }
     },
   },
   plugins: [],
