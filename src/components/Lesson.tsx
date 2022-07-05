@@ -9,6 +9,7 @@ interface LessonProps {
   slug: string;
   availableAt: Date;
   type: 'live' | 'class';
+  handleMenu: (arg: boolean) => void;
 }
 
 export function Lesson(props: LessonProps) {
@@ -21,8 +22,17 @@ export function Lesson(props: LessonProps) {
 
   const isActiveLesson = slug === props.slug;
 
+  function handleVideo() {
+    setTimeout(() => {
+      props.handleMenu(false)
+      // document.location.reload()
+    })
+  }
+
   return (
-    <Link to={`/event/lesson/${props.slug}`} className='group'>
+    <Link onClick={handleVideo} to={`${isLessonAvailable ? `/event/lesson/${props.slug}` : ''}`} className={classNames('group', {
+      'cursor-not-allowed': !isLessonAvailable,
+    })}>
       <span className="text-gray-300">
         {availableDateFormatted}
       </span>

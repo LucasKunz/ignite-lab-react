@@ -4,6 +4,11 @@
 
 #
 
+<div align='center' >
+  <img src="./src/assets/Desk.gif" />
+  <img src="./src/assets/Mobile.gif" />
+</div>
+
 ## What is it?
 <p> 
   Ignite Lab is an application of a video platform. First, it is necessary to register with name and e-mail. After the registration is done, the user has access to the videos that will be available according to their publication dates.

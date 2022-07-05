@@ -7,6 +7,7 @@ export function Logo() {
       height="34"
       fill="none"
       viewBox="0 0 237 34"
+      className="lg:max-w-[50%]"
     >
       <path
         fill="#fff"
